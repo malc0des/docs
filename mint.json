@@ -62,10 +62,7 @@
       "pages": [
         "grade-33/overview",
         "grade-33/requirements",
-        "grade-33/installation",
-        "grade-33/settings",
-        "grade-33/navigation",
-        "grade-33/reusable-snippets"
+        "grade-33/setup"
       ]
     },
     {
