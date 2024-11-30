@@ -16,18 +16,27 @@ Grade 33 is a Remote Access Tool (RAT) that allows attackers to gain control ove
 
 Grade 33 has 3 main components:
 
-1. Grade C2: Includes 2 sub-components
-    - Core: Its the main program that runs the CLI and API
-    - API: Its the API that allows to use the Web App and the Agent
-2. Grade Web App (GWA): Allows to manage agents by using the API
-3. Agent (formally Puppet): When installed on a system allows to control and manage it with the Web App through the Grade C2
+#### Grade C2
+
+Its the command and control server
+
+Also includes:
+- API (Grade API): it allows to use Agents and the Web App
+
+#### Grade Web App (GWA)
+
+Allows to control agents, it orders the server and tells him what to do with the agents, same as a remote control, it uses the API from the Grade C2 to achieve this
+
+#### Agent (formally Puppet)
+
+When installed on a system allows to control the system where it is running, you can give orders through the web app
 
 ### Why Grade 33?
 
 Grade 33 has many advantages to consider:
 
 - It has an easy-to-use client called Grade Web App (GWA) and has a beautiful user interface
-- You can develop your own client (API Client) to control all your agents like in Grade Web App
+- You can develop your own client (API Clients) to control all your agents like in Grade Web App
 - You can develop your own agents (Puppets) and control them
 
 ### Legal

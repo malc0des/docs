@@ -1,0 +1,55 @@
+---
+title: 'Requirements'
+description: ''
+icon: 'eye'
+---
+
+## Requirements
+
+In order to start using Grade 33 you’ll first need to install a few dependencies:
+
+1. [System Dependencies](#system-dependencies)
+
+### System Dependencies
+
+Follow the link to get started for your respective operating system:
+
+- [Windows](#windows)
+- [Linux](#linux)
+
+> Note: Make sure that your system architecture is 64-bit
+
+#### Linux
+##### MySQL
+
+###### Setup
+
+1. Update the Package Index: `sudo apt update`
+2. Install the `mysql-server` package: `sudo apt install mysql-server`
+3. Ensure that the server is running using the `systemctl start` command: `sudo systemctl start mysql.service`
+
+###### Configuration
+
+1. First, open up the MySQL prompt: `sudo mysql`
+2. Execute the following SQL command: `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';`
+3. Exit from MySQL prompt: `exit`
+4. Run the security script: `sudo mysql_secure_installation`
+
+##### Node.JS
+
+Install cURL, FNM and finally Node in this order
+
+- cURL
+    1. Update the Package Index: `sudo apt update`
+    2. Install cURL: `sudo apt install curl`
+    3. Verify Installation: `curl --version`
+    4. Testing cURL: `curl https://jsonplaceholder.typicode.com/posts/1`
+- Fast Node Manager (FNM): `curl -fsSL https://fnm.vercel.app/install | bash`
+- Use FNM to install specifically Node 18.20.3: `fnm install 18.20.3`
+
+> Note: Verify Installation the `node -v` command and it will show something like this `v18.19.0`
+
+#### Windows
+
+##### MySQL
+##### Node.JS

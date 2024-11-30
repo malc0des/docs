@@ -1,0 +1,55 @@
+---
+title: 'Installation'
+description: ''
+icon: 'eye'
+---
+
+## Installation
+
+Now, it's time to setup Grade C2
+
+1. Open a terminal on the same directory of the Grade C2 server
+2. Execute this command: `npm start -- setup` (needs Node.js to work)
+
+The setup command will create all necessary files and will allow to configure the server
+
+### .env File
+
+This file contains the server settings in a key=value format
+
+#### Explaining the .env File
+##### Server options
+
+These are settings to run the web server:
+
+- `SERVER_PORT`: The port number on which your server will listen | default: 80
+- `SERVER_PROTOCOL`: The protocol to be used | values: http or https | default: http
+- `SERVE_PUBLIC_DIR`: Whether to serve static files from a public directory (and Grade Web App) | default: true
+- `ENABLE_GZIP`: Whether to enable GZIP compression | default: true
+
+#### JWT secrets
+
+These are secret keys used for generate JSON Web Tokens (JWT) in different contexts:
+
+- `JWT_SECRET_KEY_FOR_API_CLIENTS`: JWT secret for API Clients | default: Setup program generates this auto.
+- `JWT_SECRET_KEY_FOR_AGENTS`: JWT secret for API Clients | default: Setup program generates this auto.
+<!-- - `JWT_SECRET_KEY_FOR_CLIENTS_SIGNUP`: JWT secret for API Clients | default: Setup program generates this auto. -->
+
+#### Database credentials
+
+- `DB_HOST`: The database host | default: localhost
+- `DB_PORT`: The database port | default: 3306
+- `DB_USER`: The database username | default: root
+- `DB_PASSWORD`: The database password | *Use the same used in the MySQL setup*
+- `DB_NAME`: The name of your database | default: grade
+- `DB_POOL_MIN` and `DB_POOL_MAX`: Minimum and maximum connection pool size | default: 0 and 10
+
+#### SSL certificate
+- `CERT_MODE`: The mode for SSL certificates, there are two options `self-signed` and `ca-signed`
+- `CERT_PRIVATE_KEY`: Path to the private key file
+- `CERT_PRIVATE_KEY_PASSPHRASE`: Passphrase for the private key (empty in your case)
+- `CERT_CERTIFICATE`: Path to the certificate file
+- `CERT_INTERMEDIATE`: Path to the intermediate certificate (if applicable)
+
+#### Security
+- `API_DOCS_CREDENTIALS`:  | default: admin|BlueSkies2024!
