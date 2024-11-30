@@ -58,14 +58,14 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Grade 33",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "grade-33/markdown",
+        "grade-33/code",
+        "grade-33/images",
+        "grade-33/settings",
+        "grade-33/navigation",
+        "grade-33/reusable-snippets"
       ]
     },
     {
